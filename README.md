@@ -7,6 +7,8 @@
    User_Id(int, primary key,auto increment), User_Name(varchar), Password(int), Email(varchar,unique), Balance(int,default=0)
 4. In case the project directly doesn't run on Eclipse, use FrontEnd.html file to run it on web browser.
 
+the flow chart for the appliction:-<img width="346" alt="FlowChart" src="https://user-images.githubusercontent.com/104378105/182555241-e46730f5-5d26-445c-a8d4-0d27a4d5e057.PNG">
+
 --------------------------------------------------------------------------------------------------------
 This project is a web based application that can be used to allow users to sign up and log in using a user_id(email) and atm pin(password).
 
