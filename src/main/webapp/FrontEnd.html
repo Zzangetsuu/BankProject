@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- defining css for blocks and forms -->
+<style type="text/css">
+input[type=submit], input[type=email], input[type=password],input[type=text] {
+  background-color: #000080;
+  border: 1px;
+  color: white;
+  padding: 8px 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+.left {
+  left: 0;
+  background-color: white;
+}
+.right {
+  right: 0;
+  background-color: #FFDEAD;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 200px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>JSW Bank</title>
+</head>
+
+<body>
+<div class="split left">
+  <div class="centered">  
+	<img src="JSW.jpg" alt="JSW ONE Logo">
+	<h3>Welcome to JSW ONE Bank.<br>"Our customers' satisfaction is our priority"</h3>
+    <h2 style="font-size:25px;color:#000080;text-decoration:underline">Login to Internet Banking </h2>
+	<form action="./BankApplications" method="post">
+    <h3>Login ID:</h3> 
+    <input type="email" name="Email" required title='Generally your login mail id.'/>
+    <br/>
+    <h3>Password:</h3> 
+    <input type="password" name="Password" required title='Please enter your login password.'/>
+    <br/><br/>
+    <input type="submit" value="Login" style="background-color:red;"/>
+    </form>
+  </div>
+</div>
+<div class="split right">
+  <div class="centered">
+	<h4 style="text-decoration:underline;">New User? Register Below</h4>
+	<form action="./SignUp" method="post">
+    <h4>User Name:</h4> 
+    <input type="text" name="User_Name" required title='Please enter your complete name.'/>
+    <br/>
+    <h4>Email:</h4> 
+    <input type="email" name="Email" required title='Please enter your email id.'/>
+    <br/>
+    <h4>Password:</h4><input type="password" name="Password" required title='Please enter your login password.'/>
+    <br/>
+    <input type="submit" value="Register/Change Password" style="background-color:red;"/>
+    <h4><b>Note:</b> In case you forget your password,<br>Enter your details above</h4>
+    </form>  
+  </div>
+</div>
+</body>
+</html>
